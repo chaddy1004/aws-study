@@ -47,11 +47,12 @@ This goes through the "Hello World" using Serverless and AWS.
     - https://www.serverless.com/framework/docs/providers/aws/cli-reference/deploy/
 - To run with specific profile, there are few ways to specify it:
     - ```export AWS_PROFILE=“profile_name” && export AWS_REGION=“region_name”```
-    - ```serverless deploy —aws-profile “profile_name”```
+    - ```serverless deploy —-aws-profile “profile_name”```
 - For more details, check out this [guide](https://www.serverless.com/framework/docs/providers/aws/guide/credentials/)
 - Once this is ran, you should be able to see an url in the deploy message 
     - Blahblahblah/“url_name”
 
 
 ## Removing Function
-- Use “serverless remove” command to remove deployed service from AWS Lambda
+- Use ```serverless remove``` command to remove deployed service from AWS Lambda
+- If the command hangs, make sure to see if the link is not still opened on your browswer
